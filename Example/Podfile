@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'ZDAudio_Example' do
+  pod 'ZDAudio', :path => '../'
+end
