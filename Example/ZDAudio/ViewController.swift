@@ -38,6 +38,7 @@ class ViewController: NSViewController {
         playPath = playPath.urlEncoded()
         
         let url: URL = URL.init(string: playPath)!
+        auManager.addMultiDelegate(self)
         auManager.play(url) { totalTime, currentTime in
             
             if self.progressSlider.maxValue != totalTime {

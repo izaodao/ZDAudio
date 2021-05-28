@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <HXCategoriesPro/NSObject+HXMultiDelegate.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -40,8 +41,6 @@ typedef void (^Level)(CGFloat level, NSError * _Nullable error);
 @end
 
 @interface AUManager : NSObject
-
-@property (nonatomic, weak) id<AUManagerDelegate> delegate;
 
 /* ---------------- 录音相关 ---------------- */
 /// 当前播放的 URL

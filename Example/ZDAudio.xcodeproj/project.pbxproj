@@ -178,11 +178,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZDAudio_Example/Pods-ZDAudio_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HXCategoriesPro/HXCategoriesPro.framework",
 				"${BUILT_PRODUCTS_DIR}/ZDAudio/ZDAudio.framework",
 				"${BUILT_PRODUCTS_DIR}/libextobjc/libextobjc.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HXCategoriesPro.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZDAudio.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libextobjc.framework",
 			);

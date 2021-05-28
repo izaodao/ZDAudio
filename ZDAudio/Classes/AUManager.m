@@ -11,6 +11,8 @@
 
 @interface AUManager () <AVAudioRecorderDelegate>
 
+@property (nonatomic, weak) id<AUManagerDelegate> delegate;
+
 @property (nonatomic, copy) Progress progress;
 @property (nonatomic, copy) Level level;
 
@@ -51,6 +53,15 @@ static id _instance = nil;
 + (instancetype)allocWithZone:(struct _NSZone *)zone { return [self shared]; }
 - (id)copyWithZone:(NSZone *)zone { return self; }
 - (id)mutableCopyWithZone:(NSZone *)zone { return self; }
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _delegate = (id)self.multiDelegate;
+    }
+    return self;
+}
 
 #pragma mark -
 + (NSTimeInterval)getTotalTimeWithUrl:(NSURL *)url {

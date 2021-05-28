@@ -1,4 +1,5 @@
 PODS:
+  - HXCategoriesPro (1.0.3)
   - libextobjc (0.6):
     - libextobjc/EXTADT (= 0.6)
     - libextobjc/EXTConcreteProtocol (= 0.6)
@@ -34,7 +35,8 @@ PODS:
     - libextobjc/RuntimeExtensions
   - libextobjc/RuntimeExtensions (0.6)
   - libextobjc/UmbrellaHeader (0.6)
-  - ZDAudio (1.0.0):
+  - ZDAudio (1.0.1):
+    - HXCategoriesPro
     - libextobjc
 
 DEPENDENCIES:
@@ -42,6 +44,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - HXCategoriesPro
     - libextobjc
 
 EXTERNAL SOURCES:
@@ -49,8 +52,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  HXCategoriesPro: d5e12446f2486c08a1912a7137ffdd5b6ad8ebcc
   libextobjc: aed8b7d2b07f511c1a7ecaacb33ea03e327c69b7
-  ZDAudio: 66474c9ff18198ed03fc2b4c2c926a0567b0143c
+  ZDAudio: 35ab4581c01acf3f79e49dee853f5c4186fcd377
 
 PODFILE CHECKSUM: 534517d428796b89783b7a1b087641fcbc733f9f
 

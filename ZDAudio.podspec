@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZDAudio'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'macOS上简单的播放和录音'
 
 # This description is used to generate tags and improve search results.
@@ -39,5 +39,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'Cocoa'
+  s.dependency 'HXCategoriesPro'
   s.dependency 'libextobjc'
 end
